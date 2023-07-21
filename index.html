@@ -6,6 +6,7 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
 </head>
 <body>
@@ -44,6 +45,7 @@
             <div class="modal-body">
                 <input class="w-100 addInput pt-2 pb-2 ps-3" type="text">
                 <p style="color: red; display: none" class="mt-2 modalError">Название задачи должны быть не менее 3 символов</p>
+                <p style="color: red; display: none" class="mt-2 modalSameTask">Такая задача уже существует</p>
             </div>
             <div class="modal-footer d-flex justify-content-center gap-3">
                 <h3>Important :</h3>  <input class="form-check-input addCheckbox" type="checkbox" value="" id="flexCheckDefault">
@@ -52,6 +54,17 @@
                 <button type="button" class="btn btn-primary addSubmit">ADD TASK</button>
             </div>
         </div>
+    </div>
+</div>
+
+
+<div class="overlay">
+    <div class="popup">
+        <h2>Изменение задачи</h2>
+        <input class="editInput" type="text">
+        <button class="editSave">Сохранить</button>
+        <p style="color: red; display: none" class="mt-2 editLengthError">Название задачи должны быть не менее 3 символов</p>
+        <p style="color: red; display: none" class="mt-2 editSameError">Такая задача уже существует</p>
     </div>
 </div>
 
